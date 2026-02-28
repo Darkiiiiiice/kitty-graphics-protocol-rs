@@ -3,7 +3,7 @@
 use crate::error::{Error, Result};
 use crate::types::*;
 use crate::{APC_END, APC_START, GRAPHICS_PREFIX, MAX_CHUNK_SIZE};
-use base64::{engine::general_purpose::STANDARD, Engine};
+use base64::{Engine, engine::general_purpose::STANDARD};
 use std::fmt;
 
 /// Builder for constructing graphics protocol commands
@@ -527,7 +527,11 @@ impl Command {
     /// Serialize a command with a path (for file/shared memory transmission)
     pub fn serialize_with_path(&self) -> Result<String> {
         let control = self.build_control_data();
-        let path = self.inner.path.as_ref().ok_or(Error::MissingField("path"))?;
+        let path = self
+            .inner
+            .path
+            .as_ref()
+            .ok_or(Error::MissingField("path"))?;
         let encoded_path = STANDARD.encode(path.as_bytes());
 
         let mut result = Vec::new();
@@ -609,10 +613,7 @@ impl fmt::Display for Command {
 impl Command {
     /// Create a command to query protocol support
     pub fn query_support() -> Self {
-        Self::builder()
-            .action(Action::Query)
-            .quiet(2)
-            .build()
+        Self::builder().action(Action::Query).quiet(2).build()
     }
 
     /// Create a command to transmit and display a PNG image

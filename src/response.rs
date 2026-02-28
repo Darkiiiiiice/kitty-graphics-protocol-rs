@@ -26,17 +26,22 @@ impl Response {
 
         // Check for APC start
         if data.len() < 6 {
-            return Err(Error::InvalidResponse(String::from_utf8_lossy(data).into_owned()));
+            return Err(Error::InvalidResponse(
+                String::from_utf8_lossy(data).into_owned(),
+            ));
         }
 
         if data[0] != crate::ESC || data[1] != b'_' || data[2] != b'G' {
-            return Err(Error::InvalidResponse(String::from_utf8_lossy(data).into_owned()));
+            return Err(Error::InvalidResponse(
+                String::from_utf8_lossy(data).into_owned(),
+            ));
         }
 
         // Find the semicolon separator
-        let semicolon_pos = data.iter().position(|&b| b == b';').ok_or_else(|| {
-            Error::InvalidResponse(String::from_utf8_lossy(data).into_owned())
-        })?;
+        let semicolon_pos = data
+            .iter()
+            .position(|&b| b == b';')
+            .ok_or_else(|| Error::InvalidResponse(String::from_utf8_lossy(data).into_owned()))?;
 
         // Parse control data (between G and ;)
         let control = &data[3..semicolon_pos];

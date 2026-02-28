@@ -16,7 +16,6 @@ pub enum ImageFormat {
     Png = 100,
 }
 
-
 impl fmt::Display for ImageFormat {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "{}", *self as u8)
@@ -24,8 +23,7 @@ impl fmt::Display for ImageFormat {
 }
 
 /// Transmission medium for image data
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
-#[derive(Default)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
 pub enum TransmissionMedium {
     /// Direct transmission within the escape code itself (default)
     #[default]
@@ -37,7 +35,6 @@ pub enum TransmissionMedium {
     /// Read from a shared memory object
     SharedMemory,
 }
-
 
 impl fmt::Display for TransmissionMedium {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -52,8 +49,7 @@ impl fmt::Display for TransmissionMedium {
 }
 
 /// Action to perform with the graphics command
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
-#[derive(Default)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
 pub enum Action {
     /// Query support and transmission medium availability
     Query,
@@ -73,7 +69,6 @@ pub enum Action {
     /// Compose animation frames (a=c)
     ComposeFrame,
 }
-
 
 impl fmt::Display for Action {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -173,8 +168,7 @@ impl fmt::Display for AnimationControl {
 }
 
 /// Composition mode for frame operations
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
-#[derive(Default)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
 pub enum CompositionMode {
     /// Alpha blend (default)
     #[default]
@@ -182,7 +176,6 @@ pub enum CompositionMode {
     /// Simple pixel replacement
     Replace,
 }
-
 
 impl fmt::Display for CompositionMode {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -259,8 +252,7 @@ impl fmt::Display for Compression {
 }
 
 /// Cursor movement policy after placing an image
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
-#[derive(Default)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
 pub enum CursorPolicy {
     /// Default: move cursor right by columns and down by rows
     #[default]
@@ -268,7 +260,6 @@ pub enum CursorPolicy {
     /// Don't move the cursor
     NoMove,
 }
-
 
 impl fmt::Display for CursorPolicy {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {

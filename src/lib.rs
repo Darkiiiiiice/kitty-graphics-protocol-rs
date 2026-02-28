@@ -50,9 +50,9 @@ pub mod types;
 
 pub use command::{ChunkedSerializer, Command, CommandBuilder};
 pub use error::{Error, Result};
-pub use image::{clear_all_images, display_png, display_png_data, ImageDisplay};
+pub use image::{ImageDisplay, clear_all_images, display_png, display_png_data};
 pub use response::Response;
-pub use terminal::{check_protocol_support, get_window_size, query_window_size, WindowSize};
+pub use terminal::{WindowSize, check_protocol_support, get_window_size, query_window_size};
 pub use types::{
     Action, AnimationControl, CompositionMode, Compression, CursorPolicy, DeleteTarget,
     FrameComposition, ImageFormat, TransmissionMedium, UnicodePlaceholder,

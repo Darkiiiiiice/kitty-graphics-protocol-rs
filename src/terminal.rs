@@ -54,7 +54,7 @@ impl WindowSize {
 #[cfg(unix)]
 mod unix {
     use super::*;
-    use libc::{ioctl, winsize, STDOUT_FILENO, TIOCGWINSZ};
+    use libc::{STDOUT_FILENO, TIOCGWINSZ, ioctl, winsize};
 
     /// Get the terminal window size using TIOCGWINSZ ioctl
     pub fn get_window_size() -> Result<WindowSize> {
@@ -82,14 +82,16 @@ mod other {
 
     /// Get the terminal window size (stub for non-Unix systems)
     pub fn get_window_size() -> Result<WindowSize> {
-        Err(Error::protocol("get_window_size is only supported on Unix systems"))
+        Err(Error::protocol(
+            "get_window_size is only supported on Unix systems",
+        ))
     }
 }
 
-#[cfg(unix)]
-pub use unix::get_window_size;
 #[cfg(not(unix))]
 pub use other::get_window_size;
+#[cfg(unix)]
+pub use unix::get_window_size;
 
 /// Query the terminal for window size using CSI 14 t escape code
 /// This works across more terminals but requires terminal interaction
@@ -172,9 +174,7 @@ fn get_terminal_size_from_stty() -> Result<(u16, u16)> {
     let output = Command::new("stty").arg("size").output()?;
 
     if !output.status.success() {
-        return Err(Error::Io(io::Error::other(
-            "stty size failed",
-        )));
+        return Err(Error::Io(io::Error::other("stty size failed")));
     }
 
     let size_str = String::from_utf8_lossy(&output.stdout);
@@ -271,13 +271,7 @@ pub fn check_protocol_support() -> Result<bool> {
             };
 
             if ready > 0 {
-                let n = unsafe {
-                    libc::read(
-                        fd,
-                        buf.as_mut_ptr() as *mut libc::c_void,
-                        buf.len(),
-                    )
-                };
+                let n = unsafe { libc::read(fd, buf.as_mut_ptr() as *mut libc::c_void, buf.len()) };
                 if n > 0 {
                     response.extend_from_slice(&buf[..n as usize]);
                     // Check if we got the complete response (ends with ESC \)

@@ -14,10 +14,7 @@ pub enum Error {
 
     /// Invalid image dimensions
     #[error("Invalid image dimensions: width={width}, height={height}")]
-    InvalidDimensions {
-        width: u32,
-        height: u32,
-    },
+    InvalidDimensions { width: u32, height: u32 },
 
     /// Invalid image ID
     #[error("Invalid image ID: {0}")]

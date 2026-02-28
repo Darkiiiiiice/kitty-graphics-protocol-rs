@@ -13,8 +13,8 @@ use std::thread;
 use std::time::Duration;
 
 use kitty_graphics_protocol::{
-    Action, Command, ImageDisplay, ImageFormat,
-    check_protocol_support, clear_all_images, get_window_size,
+    Action, Command, ImageDisplay, ImageFormat, check_protocol_support, clear_all_images,
+    get_window_size,
 };
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -38,7 +38,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     match get_window_size() {
         Ok(size) => {
             println!("   窗口大小: {}x{} 像素", size.width, size.height);
-            println!("   单元格大小: {}x{} 像素", size.cell_width(), size.cell_height());
+            println!(
+                "   单元格大小: {}x{} 像素",
+                size.cell_width(),
+                size.cell_height()
+            );
             println!("   列数: {}, 行数: {}\n", size.cols, size.rows);
         }
         Err(e) => {
@@ -159,13 +163,13 @@ fn generate_rainbow_stripes(width: u32, height: u32) -> Vec<u8> {
 
     // 彩虹颜色
     let colors: [(u8, u8, u8); 7] = [
-        (255, 0, 0),    // 红
-        (255, 127, 0),  // 橙
-        (255, 255, 0),  // 黄
-        (0, 255, 0),    // 绿
-        (0, 0, 255),    // 蓝
-        (75, 0, 130),   // 靛
-        (148, 0, 211),  // 紫
+        (255, 0, 0),   // 红
+        (255, 127, 0), // 橙
+        (255, 255, 0), // 黄
+        (0, 255, 0),   // 绿
+        (0, 0, 255),   // 蓝
+        (75, 0, 130),  // 靛
+        (148, 0, 211), // 紫
     ];
 
     let stripe_width = width / colors.len() as u32;

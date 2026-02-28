@@ -8,8 +8,8 @@
 
 use std::env;
 use std::process;
-use std::time::Duration;
 use std::thread;
+use std::time::Duration;
 
 use kitty_graphics_protocol::{check_protocol_support, clear_all_images, display_png_data};
 
@@ -111,7 +111,12 @@ fn detect_format(data: &[u8]) -> ImageFormat {
 
     // WebP: 52 49 46 46 ... 57 45 42 50
     if data[0] == 0x52 && data[1] == 0x49 && data[2] == 0x46 && data[3] == 0x46 {
-        if data.len() >= 12 && data[8] == 0x57 && data[9] == 0x45 && data[10] == 0x42 && data[11] == 0x50 {
+        if data.len() >= 12
+            && data[8] == 0x57
+            && data[9] == 0x45
+            && data[10] == 0x42
+            && data[11] == 0x50
+        {
             return ImageFormat::WebP;
         }
     }

@@ -1,6 +1,6 @@
 //! Benchmark tests for the Kitty graphics protocol library
 
-use criterion::{black_box, criterion_group, criterion_main, Criterion, Throughput};
+use criterion::{Criterion, Throughput, black_box, criterion_group, criterion_main};
 use kitty_graphics_protocol::{Action, Command, DeleteTarget, ImageFormat, Response};
 use rand::Rng;
 
@@ -453,7 +453,7 @@ fn bench_control_data(c: &mut Criterion) {
 // =============================================================================
 
 fn bench_base64_encoding(c: &mut Criterion) {
-    use base64::{engine::general_purpose::STANDARD, Engine};
+    use base64::{Engine, engine::general_purpose::STANDARD};
 
     let mut group = c.benchmark_group("base64_encoding");
 
