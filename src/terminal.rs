@@ -275,7 +275,7 @@ pub fn check_protocol_support() -> Result<bool> {
                 if n > 0 {
                     response.extend_from_slice(&buf[..n as usize]);
                     // Check if we got the complete response (ends with ESC \)
-                    if response.windows(2).any(|w| w == &[0x1b, b'\\']) {
+                    if response.windows(2).any(|w| *w == [0x1b, b'\\']) {
                         break;
                     }
                 } else {
@@ -291,7 +291,7 @@ pub fn check_protocol_support() -> Result<bool> {
 
         // Check for valid Kitty graphics protocol response
         // Response format: ESC _ G i=31;OK ESC \
-        let has_apc = response.windows(3).any(|w| w == &[0x1b, b'_', b'G']);
+        let has_apc = response.windows(3).any(|w| *w == [0x1b, b'_', b'G']);
         let has_ok = response_str.contains("OK");
         let has_error = response_str.contains("ENO");
 

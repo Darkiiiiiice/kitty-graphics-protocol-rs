@@ -376,10 +376,10 @@ impl Command {
         }
 
         // Cursor policy (C)
-        if let Some(policy) = &self.inner.cursor_policy {
-            if matches!(policy, CursorPolicy::NoMove) {
-                parts.push(format!("C={policy}"));
-            }
+        if let Some(policy) = &self.inner.cursor_policy
+            && matches!(policy, CursorPolicy::NoMove)
+        {
+            parts.push(format!("C={policy}"));
         }
 
         // Delete target (d)
@@ -440,18 +440,18 @@ impl Command {
 
         // Frame gap (z) - note: same letter as z-index
         // When action=f, z means frame gap
-        if let Some(gap) = self.inner.frame_gap {
-            if gap != 0 {
-                parts.push(format!("z={gap}"));
-            }
+        if let Some(gap) = self.inner.frame_gap
+            && gap != 0
+        {
+            parts.push(format!("z={gap}"));
         }
 
         // Loop count (v) - note: same letter as height
         // When action=a, v means loop count
-        if let Some(count) = self.inner.loop_count {
-            if count > 0 {
-                parts.push(format!("v={count}"));
-            }
+        if let Some(count) = self.inner.loop_count
+            && count > 0
+        {
+            parts.push(format!("v={count}"));
         }
 
         // Background color (Y)
