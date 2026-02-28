@@ -6,8 +6,12 @@ description = "A Rust library for the Kitty terminal graphics protocol"
 license = "MIT"
 keywords = ["kitty", "terminal", "graphics", "image", "protocol"]
 categories = ["command-line-interface", "graphics", "multimedia::images"]
-repository = "https://github.com/darkiiiiiice/kitty-graphics-protocol"
+repository = "https://github.com/Darkiiiiiice/kitty-graphics-protocol-rs"
+homepage = "https://github.com/Darkiiiiiice/kitty-graphics-protocol-rs"
+documentation = "https://docs.rs/kitty-graphics-protocol"
 readme = "README.md"
+authors = ["Darkiiiiiice"]
+exclude = ["/benches/", "/examples/", "/.github/"]
 
 [dependencies]
 base64 = "0.22.1"
