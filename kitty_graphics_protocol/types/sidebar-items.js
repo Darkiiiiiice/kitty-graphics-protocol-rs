@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Action","AnimationControl","CompositionMode","Compression","CursorPolicy","DeleteTarget","ImageFormat","TransmissionMedium"],"struct":["FrameComposition","UnicodePlaceholder"]};

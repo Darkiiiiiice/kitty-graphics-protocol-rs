@@ -1,0 +1,10 @@
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/deps/tinytemplate-5466bbc991374802.d: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/lib.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/compiler.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/error.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/instruction.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/syntax.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/template.rs
+
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/deps/libtinytemplate-5466bbc991374802.rmeta: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/lib.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/compiler.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/error.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/instruction.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/syntax.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/template.rs
+
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/lib.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/compiler.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/error.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/instruction.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/syntax.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/tinytemplate-1.2.1/src/template.rs:

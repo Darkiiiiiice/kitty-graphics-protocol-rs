@@ -1,0 +1,5 @@
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/examples/display_image-4dfc6962e1e23fc0.d: examples/display_image.rs
+
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/examples/libdisplay_image-4dfc6962e1e23fc0.rmeta: examples/display_image.rs
+
+examples/display_image.rs:

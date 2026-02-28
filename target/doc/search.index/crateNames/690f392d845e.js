@@ -1,0 +1,1 @@
+rd_("Agkitty_graphics_protocol")

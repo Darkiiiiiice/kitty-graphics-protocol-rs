@@ -1,0 +1,10 @@
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/deps/anstyle-5c19d35ab616608b.d: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/lib.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/macros.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/color.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/effect.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/reset.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/style.rs
+
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/deps/libanstyle-5c19d35ab616608b.rmeta: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/lib.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/macros.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/color.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/effect.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/reset.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/style.rs
+
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/lib.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/macros.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/color.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/effect.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/reset.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/anstyle-1.0.13/src/style.rs:

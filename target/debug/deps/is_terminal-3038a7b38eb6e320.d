@@ -1,0 +1,5 @@
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/deps/is_terminal-3038a7b38eb6e320.d: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/is-terminal-0.4.17/src/lib.rs
+
+/home/mariomang/projects/kitty-graphics-protocol/target/debug/deps/libis_terminal-3038a7b38eb6e320.rmeta: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/is-terminal-0.4.17/src/lib.rs
+
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/is-terminal-0.4.17/src/lib.rs:

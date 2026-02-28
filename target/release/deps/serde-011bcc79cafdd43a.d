@@ -1,0 +1,14 @@
+/home/mariomang/projects/kitty-graphics-protocol/target/release/deps/serde-011bcc79cafdd43a.d: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/lib.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/integer128.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/mod.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/de.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/ser.rs /home/mariomang/projects/kitty-graphics-protocol/target/release/build/serde-747a5df98c2ecbe9/out/private.rs
+
+/home/mariomang/projects/kitty-graphics-protocol/target/release/deps/libserde-011bcc79cafdd43a.rlib: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/lib.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/integer128.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/mod.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/de.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/ser.rs /home/mariomang/projects/kitty-graphics-protocol/target/release/build/serde-747a5df98c2ecbe9/out/private.rs
+
+/home/mariomang/projects/kitty-graphics-protocol/target/release/deps/libserde-011bcc79cafdd43a.rmeta: /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/lib.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/integer128.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/mod.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/de.rs /home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/ser.rs /home/mariomang/projects/kitty-graphics-protocol/target/release/build/serde-747a5df98c2ecbe9/out/private.rs
+
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/lib.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/integer128.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/mod.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/de.rs:
+/home/mariomang/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/serde-1.0.228/src/private/ser.rs:
+/home/mariomang/projects/kitty-graphics-protocol/target/release/build/serde-747a5df98c2ecbe9/out/private.rs:
+
+# env-dep:OUT_DIR=/home/mariomang/projects/kitty-graphics-protocol/target/release/build/serde-747a5df98c2ecbe9/out
