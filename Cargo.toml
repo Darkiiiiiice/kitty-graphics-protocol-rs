@@ -11,7 +11,7 @@ homepage = "https://github.com/Darkiiiiiice/kitty-graphics-protocol-rs"
 documentation = "https://docs.rs/kitty-graphics-protocol"
 readme = "README.md"
 authors = ["Darkiiiiiice"]
-exclude = ["/benches/", "/examples/", "/.github/"]
+exclude = ["/.github/"]
 
 [dependencies]
 base64 = "0.22.1"
